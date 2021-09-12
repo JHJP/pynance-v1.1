@@ -294,9 +294,9 @@ function Login(props) {
                     fullWidth
                     className={classes.createAccountButton}
                     disabled={
-                      userseqno.length != 0 &&
-                      refreshtoken.length != 0 &&
-                      accesstoken.length != 0 
+                      userseqno !== "" &&
+                      refreshtoken !== "" &&
+                      accesstoken !== "" 
                     }
                   >
                     Get certified
