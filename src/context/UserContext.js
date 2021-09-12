@@ -1,5 +1,5 @@
 import React from "react";
-import {userRegister, userLogin} from "../components/API";
+import {userRegister, userLogin, userProfileRegister} from "../components/API";
 
 var UserStateContext = React.createContext();
 var UserDispatchContext = React.createContext();
@@ -66,6 +66,7 @@ function registerUser(dispatch, firstName, lastName, login, password, userseqno,
       setIsLoading(false)
       // dispatch({ type: 'LOGIN_SUCCESS' })
       userRegister({username:login, first_name:firstName, last_name:lastName, email:login, password:password})
+      userProfileRegister({Name:firstName+lastName, Email:login, Userseqno:userseqno, Refreshtoken:refreshtoken, Accesstoken:accesstoken})
       // history.push('/app/dashboard')
     }, 2000);
   } else {
