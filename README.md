@@ -5,4 +5,4 @@
 1. SVM
 2. K-means clustering
 
-## Template of mit liscence is used for the frontEnd
+## note : Template of mit liscence is used for the frontEnd
