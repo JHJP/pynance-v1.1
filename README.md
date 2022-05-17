@@ -4,3 +4,5 @@
 # Applied machine learning method for the auto calssification
 1. SVM
 2. K-means clustering
+
+## Template of mit liscence is used for the frontEnd
